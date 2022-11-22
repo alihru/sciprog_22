@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "magic_square.h"
 
-// In the "best" case, the supplied n was < 0, which would require only one flop to determine that our "square" is not magic. => Big Omega (1)
+// In the "best" case, the supplied n was < 0 or n = 1, which would require const. number of flops, indpt of n, to determine that our "square" is not magic. => Big Omega (1)
 // In the worst case, we would check that all column, row and diagonal sums are equal to M. There are n-1 additions per row/column/diagonal. => Big O (n^2)
 // In the average case, ... .
 
